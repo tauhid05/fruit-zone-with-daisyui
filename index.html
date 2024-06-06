@@ -11,11 +11,116 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-</head>
-<body>
-    
-    <header>
+    <!-- lato from google font  -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- font awesome from google -->
+
+    <script src="https://kit.fontawesome.com/dac110ee0d.js" crossorigin="anonymous"></script>
+
+    <!-- color Design with daisy ui-->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+        .font-lato{
+            font-family: "Lato", sans-serif;
+        }
+    </style>
+
+</head>
+<body class="font-lato">
+    
+    <header class="container mx-auto">
+
+        <div class="navbar lg:bg-[#F85559] rounded-[600px] my-8 lg:my-[50px]">
+
+            <div class="navbar-start hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-lg font-medium text-[#FFFFFF]">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">All fruits</a></li>
+                  </ul>
+                 
+              </div>
+
+            <div class="navber-right">
+
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                  
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-medium text-lg">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">Shop</a></li>
+                  <li><a href="">All fruits</a></li>
+                </ul>
+              </div>
+             <div class="flex items-center text-center gap-3">
+              <img src="images/logo.png" alt="">
+              <h4 class="text-3xl font-bold text-black lg:text-white">Fruit Burst</h4>
+             </div>
+
+             
+
+            </div>
+
+            <div class="hidden lg:flex ml-32">
+              <p class="text-[#12121266] text-center justify-between flex p-4 rounded-[50px] bg-[#FFFFFF] font-normal w-[400px]">Search here <i class="fa-solid fa-magnifying-glass text-right"></i></p>
+              
+            </div>
+            
+           
+          </div>
+
+          <!-- banner section  -->
+
+          <div class="px-2 lg:px-0">
+
+            <div class="flex-1 space-y-12 container bg-[url('images/banner1.png')] max-w-[1440px] h-screen bg-contain bg-no-repeat rounded-lg">
+
+              <div class="text-center">
+                <h2 class="text-[#FFFFFF] font-bold text-xl lg:text-7xl lg:pt-20 pt-2">Exotic tastes at your
+                  <br>                
+                  doorstep</h2>
+                <p class="text-[#FFFFFF] text-xs lg:text-xl font-medium pt-0 lg:pt-4">We supply highly quality organic products</p>
+  
+                <button class="mt-2 lg:mt-7 text-center  bg-[#F85559] rounded-lg border-none lg:px-7 px-4 py-1 lg:py-5 text-[#FFFFFF] lg:text-xl font-bold">Shop Now</button>
+              </div>
+            </div>
+
+            <div class="hidden lg:flex mt-[-480px] ml-[130px] bg-[#FFF] rounded-lg shadow-xl justify-evenly grid grid-cols-5 w-[1200px] pl-16 py-12">
+              <div class=""><img src="images/fruit1.png" alt="">
+              <p>Strawberry</p></div>
+              <div><img src="images/fruit2.png" alt="">
+              <p>Orange</p></div>
+              <div><img src="images/fruit3.png" alt="">
+              <p>Mango</p></div>
+              <div><img src="images/fruit4.png" alt="">
+              <p>Strawberry</p></div>
+              <div><img src="images/fruit5.png" alt="">
+              <p>Mango</p></div>
+              </div>
+            </div>
+
+          </div>
     </header>
     <main>
 
